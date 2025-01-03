@@ -9,4 +9,6 @@ The script of the final ensemble model for thermostability prediction is "infere
 
 The script to calculate the correlation between predicted and experimental data is "correlation.py"
 
-The data for model fine-tuning and inference are in the folder "Data"
+The data for model fine-tuning and evalution are in the folder "Data/train"
+
+The data for calculating the thermostability of the proteins of the hold-out specie are in the folder "Data/new-species" 
