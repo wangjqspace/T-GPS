@@ -1,7 +1,8 @@
 # T-GPS
 #Create a virtual environment
-conda env create -f environment.yml
-conda tgps
+conda create -n tgps python=3.10
+conda activate tgps
+bash environment.sh  
 
 #to fine tune the SaProt model
 python fine-tune.py
