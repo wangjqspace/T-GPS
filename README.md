@@ -1,14 +1,20 @@
 # T-GPS
-The conda environment to run the following script is "saprot-fine-tune.yml"
+#Create a virtual environment
+conda env create -f environment.yml
+conda tgps
 
-The training script is "fine-tune.py" 
+#to fine tune the SaProt model
+python fine-tune.py
 
-The script for thermal stability prediction is "inference.py"
+#to predict thermostability of proteins 
+python inference.py
 
-The script of the final ensemble model for thermostability prediction is "inference-ensemble.py"
+#to predict thermostability of proteins based on ensemble models
+python inference_ensemble.py
 
-The script to calculate the correlation between predicted and experimental data is "correlation.py"
+#To calculate the correlation between predicted and experimental result.
+python correlation.py
 
-The data for model fine-tuning and evalution are in the folder "Data/train"
-
+The data for model fine-tuning and evaluation are in the folder "Data/train"
 The data for calculating the thermostability of the proteins of the hold-out specie are in the folder "Data/new-species" 
+The T-GPS fine-tune SaProt models (adapters) is in the folder "adapters".
