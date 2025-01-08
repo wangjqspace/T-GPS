@@ -1,4 +1,7 @@
 # T-GPS
+#Download base model from Huggingface
+https://huggingface.co/SaProtHub/Model-Thermostability-650M/tree/main
+
 #Create a virtual environment
 	conda create -n tgps python=3.10
 	conda activate tgps
