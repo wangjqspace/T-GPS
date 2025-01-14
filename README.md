@@ -2,22 +2,17 @@
 A T-GPS fine-tuned Saprot model for plant protein thermal stability prediction.
 
 ## 🌟 Features
-- Predicts protein properties from sequences
+- Predicts thermal stability based on the structure-aware tokens from Saprot model.
 - Supports batch inference
-- Uses pre-trained embeddings
 
 ## ⚙️ Installation
-```bash
-git clone https://github.com/username/protein-prediction.git
-cd protein-prediction
-pip install -r requirements.txt
-
-
 
 # T-GPS
 #Download base model from Huggingface
 https://huggingface.co/SaProtHub/Model-Thermostability-650M/tree/main
-
+```bash
+git clone https://github.com/wangjqspace/T-GPS.git
+cd T-GPS
 #Create a virtual environment
 	conda create -n tgps python=3.10
 	conda activate tgps
