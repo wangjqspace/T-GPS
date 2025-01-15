@@ -39,5 +39,5 @@ python inference.py --input_fasta experiment.fasta --output_fasta predict.fasta
 python inference_ensemble.py --input_fasta experirment.fasta --output_fasta predict.fasta
 
 # Calculate the correlation between predicted and experimental result.
-python correlation.py
+python correlation.py --input_fasta predict.fasta
 ```
