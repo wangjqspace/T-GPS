@@ -14,9 +14,10 @@ https://huggingface.co/SaProtHub/Model-Thermostability-650M/tree/main
 git clone https://github.com/wangjqspace/T-GPS.git
 cd T-GPS
 #Create a virtual environment
-	conda create -n tgps python=3.10
-	conda activate tgps
-	bash environment.sh  
+
+conda create -n tgps python=3.10
+conda activate tgps
+bash environment.sh  
 
 #to fine tune the SaProt model
 	python fine-tune.py
