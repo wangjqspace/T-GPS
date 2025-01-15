@@ -7,8 +7,8 @@ A T-GPS fine-tuned Saprot model for plant protein thermal stability prediction.
 - Support inference based on a single model or an ensemble model
 
 ## 📖 Notes
-- Example data for model fine-tuning are provided as "Data/train/dataset.fasta"
-- Example data for predicting the thermostability are provided as "Data/predict/experiment.fasta" 
+- Example input data for model fine-tuning are provided as "Example/train/dataset.fasta"
+- Example input data for predicting protein thermostability are provided as "Example/predict/experiment.fasta" 
 - The T-GPS fine-tune SaProt models (adapters) are in the folder "adapters".
 
 ## ⚙️ Installation
