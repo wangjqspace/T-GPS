@@ -22,8 +22,8 @@ cd T-GPS
 conda create -n tgps python=3.10
 conda activate tgps
 bash environment.sh  
-
-## ⚙️ Fine-tuning
+##🧪 Usage
+# Fine-tuning
 #to fine tune the SaProt model
 python fine-tune.py
 
