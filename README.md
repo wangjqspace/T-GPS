@@ -1,4 +1,4 @@
-# 🧬 T-GPS fine-tune model to predict pan-plant protein thermal stability
+# 🎉 T-GPS fine-tune model to predict pan-plant protein thermal stability
 A T-GPS fine-tuned Saprot model for plant protein thermal stability prediction.
 
 ## 🌟 Features
@@ -6,7 +6,7 @@ A T-GPS fine-tuned Saprot model for plant protein thermal stability prediction.
 - Supports batch inference.
 - Support inference based on a single model or an ensemble model
 
-## Notes
+## 📖 Notes
 Example data for model fine-tuning are provided in the folder "Data/train"
 Example data for predicting the thermostability are provided in the folder "Data/predict" 
 The T-GPS fine-tune SaProt models (adapters) are in the folder "adapters".
