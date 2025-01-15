@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import pearsonr, spearmanr
+import argparse
 
 # Function to parse FASTA file and extract TARGET and PREDICT values
 def parse_fasta(file_path):
@@ -44,11 +45,18 @@ def plot_correlations(target_values, predict_values, output_file="correlation_sa
     print(f"Pearson Correlation Coefficient (PCC): {pcc:.3f}")
     print(f"Spearman Rank Correlation Coefficient (Rho): {spearman_rho:.3f}")
 
-# Path to your FASTA file
-fasta_file_path = "saprot_At_predictions.fasta"
+# Main function to handle command-line input
+def main():
+    parser = argparse.ArgumentParser(description="Parse a FASTA file and calculate correlations between TARGET and PREDICT values.")
+    parser.add_argument("--input_fasta", required=True, help="Path to the input FASTA file.")
 
-# Parse the FASTA file
-targets, predicts = parse_fasta(fasta_file_path)
+    args = parser.parse_args()
 
-# Plot correlations and save results
-plot_correlations(targets, predicts)
+    # Parse the FASTA file
+    targets, predicts = parse_fasta(args.input_fasta)
+
+    # Plot correlations and save results
+    plot_correlations(targets, predicts)
+
+if __name__ == "__main__":
+    main()
