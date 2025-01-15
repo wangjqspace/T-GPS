@@ -7,8 +7,8 @@ A T-GPS fine-tuned Saprot model for plant protein thermal stability prediction.
 - Support inference based on a single model or an ensemble model
 
 ## 📖 Notes
-Example data for model fine-tuning are provided in the folder "Data/train"
-Example data for predicting the thermostability are provided in the folder "Data/predict" 
+Example data for model fine-tuning are provided as "Data/train/dataset.fasta"
+Example data for predicting the thermostability are provided as "Data/predict/experiment.fasta" 
 The T-GPS fine-tune SaProt models (adapters) are in the folder "adapters".
 
 ## ⚙️ Installation
@@ -30,13 +30,13 @@ bash environment.sh
 ## 🧪 Usage
 ```bash
 # Fine-tuning
-python fine-tune.py
+python fine-tune.py --input_data dataset.fasta
 
 # Predict thermal stability using a single model
-python inference.py --input_fasta input.fasta --output_fasta output.fasta
+python inference.py --input_fasta experiment.fasta --output_fasta predict.fasta
 
 # Predict thermal stability using an ensemble model
-python inference_ensemble.py --input_fasta input.fasta --output_fasta output.fasta
+python inference_ensemble.py --input_fasta experirment.fasta --output_fasta predict.fasta
 
 # Calculate the correlation between predicted and experimental result.
 python correlation.py
